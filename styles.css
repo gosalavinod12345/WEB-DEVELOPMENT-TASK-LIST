@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: #45a5e0;
+  color: #333;
+}
+#header {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+.header-text h1 span {
+  color: #ffcc00;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #ffcc00;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.about-col-1 img {
+  width: 300px;
+  border-radius: 10px;
+}
+.about-col-2 {
+  max-width: 600px;
+  padding-left: 20px;
+}
+#services {
+  text-align: center;
+  padding: 50px;
+}
+.services-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.services-list div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.services-list div:hover {
+  transform: scale(1.05);
+}
+#portfolio {
+  text-align: center;
+  padding: 50px;
+}
+.work h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+#contact {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+.contact-left .social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.contact-left .social-icons a:hover {
+  color: #ffcc00;
+}
+.btn2 {
+  display: inline-block;
+  background: #ffcc00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.copyright {
+  background: #1a252f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
