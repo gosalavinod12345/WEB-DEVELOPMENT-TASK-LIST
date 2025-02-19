@@ -1,1 +1,337 @@
+#html code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/37ce479a51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT</p>
+                <h1>Hi, I'm <span>GOSALA VINOD</span><br>Welcome To My Portfolio</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="vinod.jpg" alt="My Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my portfolio website! I'm a dedicated student with a passion for software engineering.</p>
+
+                    <div class="tab-titles">
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <h1 class="sub-title">skills</h1>
+                        <ul>
+                            <li><span>LANGUAGES</span><br>C, Python, HTML, CSS, SQL</li>
+                            <li><span>PROJECTS</span><br>1. E-Commerce Website.</li>
+                            <li><span>STRENGTHS</span><br>Strong communication skills and the ability to handle multiple projects simultaneously.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <h1 class="sub-title">Experience</h1>   
+                        <ul>
+                            <li><span>2025 feb - Current</span><br>Web Development Internship at Codsoft.</li>
+                            <li><span>2024 jan </span><br>java programming Internship at InterPE.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <h1 class="sub-title">education</h1> 
+                        <ul>
+                            <li><span>2022-2026</span><br>Bachelor of Technology (CSE) from St. Peter's Engineering College.</li>
+                            <li><span>2020-2022</span><br>Narayana Junior College.</li>
+                            <li><span>2020</span><br>Srichaitanya EM High School.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>CSE</h2>
+                    <p>Participated in a college project expo, showcasing a website developed using HTMLand CSS.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Website Design</h2>
+                    <p>Created the homepage of Landing page.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>NSS</h2>
+                    <p>Participated in various community service activities and led team efforts in organizing events</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work">
+                <h3>NSS</h3>
+                <p>Participated in various community service activities and led team efforts in organizing events.</p>
+                <h3>Tourism Website</h3>
+                <p>A travel and tourism website for easy online bookings and tour planning.</p>
+                <h3>Restaurant App</h3>
+                <p>A restaurant application designed for seamless ordering and business expansion.</p>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> vinodgosala3@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8374732076</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/gosalavinod12345/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/vinodgosala_30"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vinod-gosala-"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="My resume vinod.pdf" download class="btn btn2">DOWNLOAD RESUME</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright by GSOALA VINOD</p>
+    </div>
+
+    <script>
+        function openTab(tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>GOSALA VINOD</h1>
+      <p>Web Developer </p>
+    </header>
+
+    <section id="about">
+      <img src="vinod.jpg" alt="GOSALA VINOD" />
+    </section>
+
+    <section id="about1">
+      <h2>
+        I'm a passionate web developer and designer with a keen eye for detail.
+      </h2>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1" />
+        <h3>Project 1</h3>
+        <p>Designed and coded a responsive website for a local business.</p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2" />
+        <h3>Project 2</h3>
+        <p>
+          Developed a JavaScript-based interactive portfolio showcasing my work.
+        </p>
+      </div>
+    </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="resume.pdf" download> Download Resume (PDF)</a></p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: vinodgosala3@gmail.com</p>
+      <p>Phone: 8374732076</p>
+    </section>
+    <footer>
+      <p>&copy; 2023 GOSALA VINOD. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+*****************************************************************************************************
+#css
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: #45a5e0;
+  color: #333;
+}
+#header {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+.header-text h1 span {
+  color: #ffcc00;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #ffcc00;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.about-col-1 img {
+  width: 300px;
+  border-radius: 10px;
+}
+.about-col-2 {
+  max-width: 600px;
+  padding-left: 20px;
+}
+#services {
+  text-align: center;
+  padding: 50px;
+}
+.services-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.services-list div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.services-list div:hover {
+  transform: scale(1.05);
+}
+#portfolio {
+  text-align: center;
+  padding: 50px;
+}
+.work h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+#contact {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+.contact-left .social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.contact-left .social-icons a:hover {
+  color: #ffcc00;
+}
+.btn2 {
+  display: inline-block;
+  background: #ffcc00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.copyright {
+  background: #1a252f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
 
